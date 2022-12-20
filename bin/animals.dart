@@ -51,3 +51,16 @@ class Kapor extends Abzi
     print('Animal afraid of other animal');
   }
 }
+
+abstract class A{}
+abstract class B{
+
+  void noBody();
+  int Body();
+}
+class C{
+  external void noBody();
+}
+class D{}
+
+class E implements A,B,C,D{}

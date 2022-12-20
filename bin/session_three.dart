@@ -1,6 +1,7 @@
 import 'package:session_three/session_three.dart' as session_three;
 
 import 'animals.dart';
+import 'data_class.dart';
 
 void main(List<String> arguments) {
   print('Hello world: ${session_three.calculate()}!');
@@ -21,5 +22,14 @@ void main(List<String> arguments) {
   Kapor kapor = Kapor(name :'kapor');
   kapor.myKind();
   print(kapor.name);
+
+  Map<String,dynamic> haveData = {'name' : 'ali' , 'userName' : 'user' , 'id' :'123'};
+  Map<String,dynamic>  noData = {'empty' : ''};
+
+  DataClass data = DataClass.factoryConstructor(json : haveData);
+  print(data);
+
+  DataClass data1 = DataClass.factoryConstructor(json : noData);
+  print(data1);
 
 }
