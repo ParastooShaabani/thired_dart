@@ -8,7 +8,6 @@ class DataClass
   String? userName;
   String? id;
 
-
   DataClass({this.name, this.userName, this.id});
 
   factory DataClass.factoryConstructor({Map<String,dynamic>? json})
@@ -27,4 +26,5 @@ class DataClass
   String toString() {
     return 'DataClass{name: $name, userName: $userName, id: $id}';
   }
+
 }

@@ -8,7 +8,7 @@ class EmptyClass extends DataClass
   factory EmptyClass.emptyData({Map<String,dynamic>? json})
   {
     return EmptyClass(
-    json?['empty'],
+    json?['empty'], // value
     );
   }
 
